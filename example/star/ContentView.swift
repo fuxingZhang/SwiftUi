@@ -16,7 +16,6 @@ struct ContentView: View {
                     NavigationLink(destination: WebViewPage()){
                         PageRow(title: "WebView", subTitle: "webview")
                     }
-                    
                     NavigationLink(destination: ControllerPage<UIKitController>()){
                         PageRow(title: "UIViewController", subTitle: "webview")
                     }
@@ -33,6 +32,11 @@ struct ContentView: View {
                     }
                     NavigationLink(destination: WebImagePage()) {
                         PageRow(title: "WebImage", subTitle: "display web image")
+                    }
+                }
+                Section(header: Text("button")){
+                    NavigationLink(destination: ButtonPage()) {
+                        PageRow(title: "button", subTitle: "press button")
                     }
                 }
             }

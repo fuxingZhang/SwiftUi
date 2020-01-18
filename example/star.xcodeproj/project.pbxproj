@@ -23,6 +23,7 @@
 		F8232B6123D205A1005D508C /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8232B6023D205A1005D508C /* View+Ext.swift */; };
 		F837E73223D2ACC30024841C /* ImagePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F837E73123D2ACC30024841C /* ImagePage.swift */; };
 		F837E73623D2B62A0024841C /* WebImagePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F837E73523D2B62A0024841C /* WebImagePage.swift */; };
+		F8F0572523D32EF400F3F7E5 /* ButtonPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F0572423D32EF400F3F7E5 /* ButtonPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		F8232B6023D205A1005D508C /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
 		F837E73123D2ACC30024841C /* ImagePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePage.swift; sourceTree = "<group>"; };
 		F837E73523D2B62A0024841C /* WebImagePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebImagePage.swift; sourceTree = "<group>"; };
+		F8F0572423D32EF400F3F7E5 /* ButtonPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		F8232B4E23D1CE33005D508C /* page */ = {
 			isa = PBXGroup;
 			children = (
+				F8F0572323D32EE000F3F7E5 /* Button */,
 				F837E73023D2ACAC0024841C /* Image */,
 				F8232B5823D1FB13005D508C /* Text */,
 				F8232B4F23D1CE48005D508C /* webview */,
@@ -143,6 +146,14 @@
 				F837E73523D2B62A0024841C /* WebImagePage.swift */,
 			);
 			path = Image;
+			sourceTree = "<group>";
+		};
+		F8F0572323D32EE000F3F7E5 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				F8F0572423D32EF400F3F7E5 /* ButtonPage.swift */,
+			);
+			path = Button;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +229,7 @@
 			files = (
 				F8232B5523D1DD87005D508C /* ControllerPage.swift in Sources */,
 				F8232B3B23D1570A005D508C /* AppDelegate.swift in Sources */,
+				F8F0572523D32EF400F3F7E5 /* ButtonPage.swift in Sources */,
 				F837E73623D2B62A0024841C /* WebImagePage.swift in Sources */,
 				F8232B5723D1F4AF005D508C /* UIKitController.swift in Sources */,
 				F8232B5F23D2041D005D508C /* Window+Ext.swift in Sources */,
@@ -366,6 +378,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"star/Preview Content\"";
+				DEVELOPMENT_TEAM = 5M2W4KCMK2;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = star/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -385,6 +398,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"star/Preview Content\"";
+				DEVELOPMENT_TEAM = 5M2W4KCMK2;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = star/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
