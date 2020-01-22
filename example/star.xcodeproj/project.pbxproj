@@ -21,6 +21,8 @@
 		F8232B5C23D1FEE2005D508C /* TextFieldPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8232B5B23D1FEE2005D508C /* TextFieldPage.swift */; };
 		F8232B5F23D2041D005D508C /* Window+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8232B5E23D2041D005D508C /* Window+Ext.swift */; };
 		F8232B6123D205A1005D508C /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8232B6023D205A1005D508C /* View+Ext.swift */; };
+		F823749123D7F2A600655E9C /* NavigationButtonPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F823749023D7F2A600655E9C /* NavigationButtonPage.swift */; };
+		F823749323D820DB00655E9C /* EditButtonPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F823749223D820DB00655E9C /* EditButtonPage.swift */; };
 		F837E73223D2ACC30024841C /* ImagePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F837E73123D2ACC30024841C /* ImagePage.swift */; };
 		F837E73623D2B62A0024841C /* WebImagePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F837E73523D2B62A0024841C /* WebImagePage.swift */; };
 		F8F0572523D32EF400F3F7E5 /* ButtonPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F0572423D32EF400F3F7E5 /* ButtonPage.swift */; };
@@ -43,6 +45,8 @@
 		F8232B5B23D1FEE2005D508C /* TextFieldPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldPage.swift; sourceTree = "<group>"; };
 		F8232B5E23D2041D005D508C /* Window+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Window+Ext.swift"; sourceTree = "<group>"; };
 		F8232B6023D205A1005D508C /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
+		F823749023D7F2A600655E9C /* NavigationButtonPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationButtonPage.swift; sourceTree = "<group>"; };
+		F823749223D820DB00655E9C /* EditButtonPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditButtonPage.swift; sourceTree = "<group>"; };
 		F837E73123D2ACC30024841C /* ImagePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePage.swift; sourceTree = "<group>"; };
 		F837E73523D2B62A0024841C /* WebImagePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebImagePage.swift; sourceTree = "<group>"; };
 		F8F0572423D32EF400F3F7E5 /* ButtonPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPage.swift; sourceTree = "<group>"; };
@@ -152,6 +156,8 @@
 			isa = PBXGroup;
 			children = (
 				F8F0572423D32EF400F3F7E5 /* ButtonPage.swift */,
+				F823749023D7F2A600655E9C /* NavigationButtonPage.swift */,
+				F823749223D820DB00655E9C /* EditButtonPage.swift */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -236,10 +242,12 @@
 				F8232B5C23D1FEE2005D508C /* TextFieldPage.swift in Sources */,
 				F8232B5A23D1FB2A005D508C /* TextPage.swift in Sources */,
 				F8232B5323D1DB66005D508C /* PageRow.swift in Sources */,
+				F823749123D7F2A600655E9C /* NavigationButtonPage.swift in Sources */,
 				F8232B6123D205A1005D508C /* View+Ext.swift in Sources */,
 				F8232B3D23D1570A005D508C /* SceneDelegate.swift in Sources */,
 				F8232B5123D1CE7E005D508C /* WebViewPage.swift in Sources */,
 				F837E73223D2ACC30024841C /* ImagePage.swift in Sources */,
+				F823749323D820DB00655E9C /* EditButtonPage.swift in Sources */,
 				F8232B3F23D1570A005D508C /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

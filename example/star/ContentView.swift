@@ -12,7 +12,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView{
             List{
-                Section(header: Text("special")){
+                Section(header: Text("Special")){
                     NavigationLink(destination: WebViewPage()){
                         PageRow(title: "WebView", subTitle: "webview")
                     }
@@ -20,7 +20,7 @@ struct ContentView: View {
                         PageRow(title: "UIViewController", subTitle: "webview")
                     }
                 }
-                Section(header: Text("basic components")) {
+                Section(header: Text("Basic components")) {
                     NavigationLink(destination: TextPage()) {
                         PageRow(title: "Text", subTitle: "text page")
                     }
@@ -34,9 +34,18 @@ struct ContentView: View {
                         PageRow(title: "WebImage", subTitle: "display web image")
                     }
                 }
-                Section(header: Text("button")){
+                Section(header: Text("Button")){
                     NavigationLink(destination: ButtonPage()) {
-                        PageRow(title: "button", subTitle: "press button")
+                        PageRow(title: "Button", subTitle: "press button")
+                    }
+                    NavigationLink(destination: NavigationButtonPage()) {
+                        PageRow(title: "NavigationButton", subTitle: "Navigation Button")
+                    }
+                    NavigationLink(destination: Text("i am a text")) {
+                        PageRow(title: "PresentationButton", subTitle: "new page with text")
+                    }
+                    NavigationLink(destination: EditButtonPage()) {
+                        PageRow(title: "EditButton", subTitle: "toggle edit mode")
                     }
                 }
             }
