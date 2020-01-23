@@ -14,12 +14,13 @@ struct ContentView: View {
             List{
                 Section(header: Text("Special")){
                     NavigationLink(destination: WebViewPage()){
-                        PageRow(title: "WebView", subTitle: "webview")
+                        PageRow(title: "WebView", subTitle: "display web page")
                     }
                     NavigationLink(destination: ControllerPage<UIKitController>()){
-                        PageRow(title: "UIViewController", subTitle: "webview")
+                        PageRow(title: "UIViewController", subTitle: "display the UIViewController")
                     }
                 }
+                
                 Section(header: Text("Basic components")) {
                     NavigationLink(destination: TextPage()) {
                         PageRow(title: "Text", subTitle: "text page")
@@ -34,6 +35,7 @@ struct ContentView: View {
                         PageRow(title: "WebImage", subTitle: "display web image")
                     }
                 }
+                
                 Section(header: Text("Button")){
                     NavigationLink(destination: ButtonPage()) {
                         PageRow(title: "Button", subTitle: "press button")
@@ -46,6 +48,12 @@ struct ContentView: View {
                     }
                     NavigationLink(destination: EditButtonPage()) {
                         PageRow(title: "EditButton", subTitle: "toggle edit mode")
+                    }
+                }
+                
+                Section(header: Text("Picker")){
+                    NavigationLink(destination: PickerPage()) {
+                        PageRow(title: "picker", subTitle: "custom data source picker")
                     }
                 }
             }

@@ -25,6 +25,7 @@
 		F823749323D820DB00655E9C /* EditButtonPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F823749223D820DB00655E9C /* EditButtonPage.swift */; };
 		F837E73223D2ACC30024841C /* ImagePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F837E73123D2ACC30024841C /* ImagePage.swift */; };
 		F837E73623D2B62A0024841C /* WebImagePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F837E73523D2B62A0024841C /* WebImagePage.swift */; };
+		F84B33FA23D9348A00C1130E /* PickerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84B33F923D9348A00C1130E /* PickerPage.swift */; };
 		F8F0572523D32EF400F3F7E5 /* ButtonPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F0572423D32EF400F3F7E5 /* ButtonPage.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		F823749223D820DB00655E9C /* EditButtonPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditButtonPage.swift; sourceTree = "<group>"; };
 		F837E73123D2ACC30024841C /* ImagePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePage.swift; sourceTree = "<group>"; };
 		F837E73523D2B62A0024841C /* WebImagePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebImagePage.swift; sourceTree = "<group>"; };
+		F84B33F923D9348A00C1130E /* PickerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerPage.swift; sourceTree = "<group>"; };
 		F8F0572423D32EF400F3F7E5 /* ButtonPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,22 +109,23 @@
 		F8232B4E23D1CE33005D508C /* page */ = {
 			isa = PBXGroup;
 			children = (
+				F84B33F823D9346B00C1130E /* Picker */,
 				F8F0572323D32EE000F3F7E5 /* Button */,
 				F837E73023D2ACAC0024841C /* Image */,
 				F8232B5823D1FB13005D508C /* Text */,
-				F8232B4F23D1CE48005D508C /* webview */,
+				F8232B4F23D1CE48005D508C /* Special */,
 			);
 			path = page;
 			sourceTree = "<group>";
 		};
-		F8232B4F23D1CE48005D508C /* webview */ = {
+		F8232B4F23D1CE48005D508C /* Special */ = {
 			isa = PBXGroup;
 			children = (
 				F8232B5023D1CE7E005D508C /* WebViewPage.swift */,
 				F8232B5423D1DD87005D508C /* ControllerPage.swift */,
 				F8232B5623D1F4AF005D508C /* UIKitController.swift */,
 			);
-			path = webview;
+			path = Special;
 			sourceTree = "<group>";
 		};
 		F8232B5823D1FB13005D508C /* Text */ = {
@@ -150,6 +153,14 @@
 				F837E73523D2B62A0024841C /* WebImagePage.swift */,
 			);
 			path = Image;
+			sourceTree = "<group>";
+		};
+		F84B33F823D9346B00C1130E /* Picker */ = {
+			isa = PBXGroup;
+			children = (
+				F84B33F923D9348A00C1130E /* PickerPage.swift */,
+			);
+			path = Picker;
 			sourceTree = "<group>";
 		};
 		F8F0572323D32EE000F3F7E5 /* Button */ = {
@@ -248,6 +259,7 @@
 				F8232B5123D1CE7E005D508C /* WebViewPage.swift in Sources */,
 				F837E73223D2ACC30024841C /* ImagePage.swift in Sources */,
 				F823749323D820DB00655E9C /* EditButtonPage.swift in Sources */,
+				F84B33FA23D9348A00C1130E /* PickerPage.swift in Sources */,
 				F8232B3F23D1570A005D508C /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
