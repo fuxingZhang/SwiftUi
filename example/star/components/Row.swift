@@ -8,11 +8,11 @@
 
 import SwiftUI
 
-struct PageRow: View {
+struct Row: View {
     private let title: String
     private let subTitle: String?
     
-    init(title:String, subTitle: String? = nil){
+    init(title: String, subTitle: String? = nil){
         self.title = title
         self.subTitle = subTitle
     }
@@ -28,8 +28,8 @@ struct PageRow: View {
     }
 }
 
-struct PageRow_Previews: PreviewProvider {
+struct Row_Previews: PreviewProvider {
     static var previews: some View {
-        PageRow(title: "row data")
+        Row(title: "row data")
     }
 }

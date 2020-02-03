@@ -16,7 +16,7 @@ struct EditButtonPage: View {
     var body: some View {
         List{
             ForEach(source.items, id: \.self) {
-                idx in PageRow(title: "\(idx)")
+                idx in Row(title: "\(idx)")
             }
             .onDelete(perform: deletePlace)
             .onMove(perform: movePlace)

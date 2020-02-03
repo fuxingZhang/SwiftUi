@@ -14,46 +14,55 @@ struct ContentView: View {
             List{
                 Section(header: Text("Special")){
                     NavigationLink(destination: WebViewPage()){
-                        PageRow(title: "WebView", subTitle: "display web page")
+                        Row(title: "WebView", subTitle: "display web page")
                     }
                     NavigationLink(destination: ControllerPage<UIKitController>()){
-                        PageRow(title: "UIViewController", subTitle: "display the UIViewController")
+                        Row(title: "UIViewController", subTitle: "display the UIViewController")
                     }
                 }
                 
                 Section(header: Text("Basic components")) {
                     NavigationLink(destination: TextPage()) {
-                        PageRow(title: "Text", subTitle: "text page")
+                        Row(title: "Text", subTitle: "text page")
                     }
                     NavigationLink(destination: TextFieldPage()) {
-                        PageRow(title: "TextField", subTitle: "input username and password")
+                        Row(title: "TextField", subTitle: "input username and password")
                     }
                     NavigationLink(destination: ImagePage()) {
-                        PageRow(title: "Image", subTitle: "display local image")
+                        Row(title: "Image", subTitle: "display local image")
                     }
                     NavigationLink(destination: WebImagePage()) {
-                        PageRow(title: "WebImage", subTitle: "display web image")
+                        Row(title: "WebImage", subTitle: "display web image")
                     }
                 }
                 
                 Section(header: Text("Button")){
                     NavigationLink(destination: ButtonPage()) {
-                        PageRow(title: "Button", subTitle: "press button")
+                        Row(title: "Button", subTitle: "press button")
                     }
                     NavigationLink(destination: NavigationButtonPage()) {
-                        PageRow(title: "NavigationButton", subTitle: "Navigation Button")
+                        Row(title: "NavigationButton", subTitle: "Navigation Button")
                     }
                     NavigationLink(destination: Text("i am a text")) {
-                        PageRow(title: "PresentationButton", subTitle: "new page with text")
+                        Row(title: "PresentationButton", subTitle: "new page with text")
                     }
                     NavigationLink(destination: EditButtonPage()) {
-                        PageRow(title: "EditButton", subTitle: "toggle edit mode")
+                        Row(title: "EditButton", subTitle: "toggle edit mode")
+                    }
+                }
+                
+                Section(header: Text("International")){
+                    NavigationLink(destination: International()) {
+                        Row(title: "International", subTitle: "International")
                     }
                 }
                 
                 Section(header: Text("Picker")){
                     NavigationLink(destination: PickerPage()) {
-                        PageRow(title: "picker", subTitle: "custom data source picker")
+                        Row(title: "Picker", subTitle: "custom data source picker")
+                    }
+                    NavigationLink(destination: DatePickerPage()) {
+                        Row(title: "DatePicker", subTitle: "date select")
                     }
                 }
             }
@@ -71,6 +80,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().colorScheme(.light)
+        ContentView()
+            .colorScheme(.light)
     }
 }
