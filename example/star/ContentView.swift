@@ -64,6 +64,9 @@ struct ContentView: View {
                     NavigationLink(destination: DatePickerPage()) {
                         Row(title: "DatePicker", subTitle: "date select")
                     }
+                    NavigationLink(destination: SliderPage()) {
+                        Row(title: "Slider", subTitle: "date select")
+                    }
                 }
             }
             .listStyle(GroupedListStyle())

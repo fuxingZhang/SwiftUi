@@ -73,6 +73,21 @@ struct International: View {
             }
             .background(Color.white)
             
+            // en, zh
+            HStack {
+                Text("Locale.current.languageCode:")
+                Spacer()
+                Text(Locale.current.languageCode ?? "")
+            }
+            .background(Color.white)
+            
+            HStack {
+                Text("Locale.current.identifier:")
+                Spacer()
+                Text(Locale.current.identifier)
+            }
+            .background(Color.white)
+            
             HStack {
                 Spacer()
                 Text("enum:")
@@ -92,6 +107,9 @@ struct International: View {
             .background(Color.white)
             
             Button(action: {
+                print("Locale.current: ", Locale.current) //zh-Hans_US (current)
+                print(type(of: Locale.current)) // Locale
+                print(Locale.preferredLanguages) // ["zh-Hans-US", "en-US", "en"]
                 print("original: \(self.language)")
                 self.language = self.language.hasPrefix("en") ? "zh" : "en"
                 print("now: \(self.language)")

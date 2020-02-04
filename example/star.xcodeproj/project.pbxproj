@@ -31,6 +31,7 @@
 		F8A719AA23E813DE001A2A8A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8A719AC23E813DE001A2A8A /* Localizable.strings */; };
 		F8A719B023E81B93001A2A8A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8A719B223E81B93001A2A8A /* InfoPlist.strings */; };
 		F8A719B923E88B82001A2A8A /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A719B823E88B82001A2A8A /* UserData.swift */; };
+		F8A719BC23E98EC4001A2A8A /* SliderPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A719BB23E98EC4001A2A8A /* SliderPage.swift */; };
 		F8F0572523D32EF400F3F7E5 /* ButtonPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F0572423D32EF400F3F7E5 /* ButtonPage.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		F8A719B523E83D8A001A2A8A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		F8A719B623E83D92001A2A8A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		F8A719B823E88B82001A2A8A /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		F8A719BB23E98EC4001A2A8A /* SliderPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderPage.swift; sourceTree = "<group>"; };
 		F8F0572423D32EF400F3F7E5 /* ButtonPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -177,6 +179,7 @@
 			children = (
 				F84B33F923D9348A00C1130E /* PickerPage.swift */,
 				F8354E4E23E7C3E90092524F /* DatePickerPage.swift */,
+				F8A719BB23E98EC4001A2A8A /* SliderPage.swift */,
 			);
 			path = Picker;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 			files = (
 				F8232B5523D1DD87005D508C /* ControllerPage.swift in Sources */,
 				F8232B3B23D1570A005D508C /* AppDelegate.swift in Sources */,
+				F8A719BC23E98EC4001A2A8A /* SliderPage.swift in Sources */,
 				F8354E4F23E7C3E90092524F /* DatePickerPage.swift in Sources */,
 				F8F0572523D32EF400F3F7E5 /* ButtonPage.swift in Sources */,
 				F837E73623D2B62A0024841C /* WebImagePage.swift in Sources */,
