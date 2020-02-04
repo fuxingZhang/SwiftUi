@@ -49,6 +49,9 @@ struct ContentView: View {
                     NavigationLink(destination: EditButtonPage()) {
                         Row(title: "EditButton", subTitle: "toggle edit mode")
                     }
+                    NavigationLink(destination: TogglePage()) {
+                        Row(title: "Toggle", subTitle: "toggle state")
+                    }
                 }
                 
                 Section(header: Text("International")){
