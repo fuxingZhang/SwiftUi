@@ -50,7 +50,13 @@ struct ContentView: View {
                         Row(title: "EditButton", subTitle: "toggle edit mode")
                     }
                     NavigationLink(destination: TogglePage()) {
-                        Row(title: "Toggle", subTitle: "toggle state")
+                        Row(title: "Toggle", subTitle: "Toggle Button")
+                    }
+                    NavigationLink(destination: SliderPage()) {
+                        Row(title: "Slider", subTitle: "Slider Button")
+                    }
+                    NavigationLink(destination: StepperPage()) {
+                        Row(title: "Stepper", subTitle: "Stepper Button")
                     }
                 }
                 
@@ -66,9 +72,6 @@ struct ContentView: View {
                     }
                     NavigationLink(destination: DatePickerPage()) {
                         Row(title: "DatePicker", subTitle: "date select")
-                    }
-                    NavigationLink(destination: SliderPage()) {
-                        Row(title: "Slider", subTitle: "date select")
                     }
                 }
             }

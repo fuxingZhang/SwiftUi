@@ -33,6 +33,7 @@
 		F8A719B923E88B82001A2A8A /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A719B823E88B82001A2A8A /* UserData.swift */; };
 		F8A719BC23E98EC4001A2A8A /* SliderPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A719BB23E98EC4001A2A8A /* SliderPage.swift */; };
 		F8A719BE23E9906C001A2A8A /* TogglePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A719BD23E9906C001A2A8A /* TogglePage.swift */; };
+		F8A719C023E99338001A2A8A /* StepperPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A719BF23E99338001A2A8A /* StepperPage.swift */; };
 		F8F0572523D32EF400F3F7E5 /* ButtonPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F0572423D32EF400F3F7E5 /* ButtonPage.swift */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		F8A719B823E88B82001A2A8A /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		F8A719BB23E98EC4001A2A8A /* SliderPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderPage.swift; sourceTree = "<group>"; };
 		F8A719BD23E9906C001A2A8A /* TogglePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglePage.swift; sourceTree = "<group>"; };
+		F8A719BF23E99338001A2A8A /* StepperPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperPage.swift; sourceTree = "<group>"; };
 		F8F0572423D32EF400F3F7E5 /* ButtonPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -217,6 +219,7 @@
 				F8F0572423D32EF400F3F7E5 /* ButtonPage.swift */,
 				F823749023D7F2A600655E9C /* NavigationButtonPage.swift */,
 				F823749223D820DB00655E9C /* EditButtonPage.swift */,
+				F8A719BF23E99338001A2A8A /* StepperPage.swift */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				F8232B3D23D1570A005D508C /* SceneDelegate.swift in Sources */,
 				F8232B5123D1CE7E005D508C /* WebViewPage.swift in Sources */,
 				F837E73223D2ACC30024841C /* ImagePage.swift in Sources */,
+				F8A719C023E99338001A2A8A /* StepperPage.swift in Sources */,
 				F823749323D820DB00655E9C /* EditButtonPage.swift in Sources */,
 				F84B33FA23D9348A00C1130E /* PickerPage.swift in Sources */,
 				F8A719B923E88B82001A2A8A /* UserData.swift in Sources */,
