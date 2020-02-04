@@ -45,8 +45,6 @@ struct International: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
-            Spacer()
-            
             // real: en_US, zh_CN, emulator: en_US, zh_Hans_US
             HStack(alignment: .top, spacing: 20) {
                 Spacer()
@@ -106,26 +104,48 @@ struct International: View {
             .foregroundColor(.red)
             .background(Color.white)
             
-            Button(action: {
-                print("Locale.current: ", Locale.current) //zh-Hans_US (current)
-                print(type(of: Locale.current)) // Locale
-                print(Locale.preferredLanguages) // ["zh-Hans-US", "en-US", "en"]
-                print("original: \(self.language)")
-                self.language = self.language.hasPrefix("en") ? "zh" : "en"
-                print("now: \(self.language)")
-                self.userData.language = self.userData.language.hasPrefix("en") ? "zh" : "en"
-            }) {
+            HStack() {
                 Spacer()
-                Text("toggle userData language")
-                    .bold()
-                    .font(.system(size: 24, design: .rounded))
-                    .shadow(radius: 1)
+                Button(action: {
+                    print("get current running application language:", Bundle.main.preferredLocalizations.first!)
+                    print(Bundle.main.preferredLocalizations.first ?? "") // "zh-Hans
+                    print(Bundle.main.preferredLocalizations.first  == "zh-Hans") // true
+                    print("Locale.current: ", Locale.current) //zh-Hans_US (current)
+                    print(type(of: Locale.current)) // Locale
+                    print(Locale.preferredLanguages) // ["zh-Hans-US", "en-US", "en"]
+                    print("original: \(self.language)")
+                    self.language = self.language.hasPrefix("en") ? "zh" : "en"
+                    print("now: \(self.language)")
+                    self.userData.language = self.userData.language == "en" ? "zh" : "en"
+                }) {
+                    //                                Spacer()
+                    Text("toggle userData language")
+                        .bold()
+                        .font(.system(size: 24, design: .rounded))
+                        .shadow(radius: 1)
+                    //                                Spacer()
+                }
                 Spacer()
             }
             
+            HStack(alignment: .top, spacing: 20) {
+                Button(action: {
+                    UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
+                }) {
+                    Spacer()
+                    Text("change system language")
+                        .bold()
+                        .font(.system(size: 24, design: .rounded))
+                        .shadow(radius: 1)
+                    Spacer()
+                }
+            }
+            .foregroundColor(.red)
+            .background(Color.white)
+            
             Spacer()
         }
-            //        .frame(width: 350, height: 260)
+            //            .frame(width: 350, height: 260)
             .padding(30)
             .background(Color.orange)
             .cornerRadius(8)
