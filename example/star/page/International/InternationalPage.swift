@@ -40,25 +40,79 @@ struct International: View {
             return "lang"
         }
     }
+    @EnvironmentObject var userData: UserData
+    @State var language = "en"
+    
     var body: some View {
-        VStack(spacing: 30) {
-            HStack {
+        VStack(alignment: .leading, spacing: 20) {
+            Spacer()
+            
+            // real: en_US, zh_CN, emulator: en_US, zh_Hans_US
+            HStack(alignment: .top, spacing: 20) {
+                Spacer()
+                Text("NSLocale.current.identifier")
+                Text(NSLocale.current.identifier)
+            }
+            .foregroundColor(.red)
+            .background(Color.white)
+            
+            HStack(alignment: .top, spacing: 20) {
                 Text("string:")
                 // 都有效
                 Text("lang")
+                Spacer()
             }
+            .padding(10)
+            .background(Color.white)
             
             HStack {
                 Text("NSLocalizedString:")
+                Spacer()
                 // 预览无效，模拟器、真机有效
                 Text(NSLocalizedString("lang", comment: ""))
             }
+            .background(Color.white)
             
             HStack {
+                Spacer()
                 Text("enum:")
+                Spacer()
                 Text(Tranalation.lang)
+                Spacer()
             }
-        }.navigationBarTitle(Text("根据系统语言展示内容"))
+            .background(Color.white)
+            
+            HStack(alignment: .top, spacing: 20) {
+                Spacer()
+                Text("userData language:")
+                Text(userData.language)
+                Spacer()
+            }
+            .foregroundColor(.red)
+            .background(Color.white)
+            
+            Button(action: {
+                print("original: \(self.language)")
+                self.language = self.language.hasPrefix("en") ? "zh" : "en"
+                print("now: \(self.language)")
+                self.userData.language = self.userData.language.hasPrefix("en") ? "zh" : "en"
+            }) {
+                Spacer()
+                Text("toggle userData language")
+                    .bold()
+                    .font(.system(size: 24, design: .rounded))
+                    .shadow(radius: 1)
+                Spacer()
+            }
+            
+            Spacer()
+        }
+            //        .frame(width: 350, height: 260)
+            .padding(30)
+            .background(Color.orange)
+            .cornerRadius(8)
+            .shadow(radius: 5)
+            .navigationBarTitle(Text("根据系统语言展示内容"))
     }
 }
 
@@ -67,8 +121,7 @@ struct InternationalPage_Previews: PreviewProvider {
         ForEach(["en", "zh"], id: \.self) { id in
             International(id: id)
                 .environment(\.locale, .init(identifier: id))
-            
+                .environmentObject(UserData())
         }
-        
     }
 }
