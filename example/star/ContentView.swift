@@ -75,15 +75,24 @@ struct ContentView: View {
                     }
                 }
                 
+                Section(header: Text("Navigation")){
+                    NavigationLink(destination: NavigationViewPage()) {
+                        Row(title: "NavigationView", subTitle: "used to create a view container that contains top navigation bar")
+                    }
+                    NavigationLink(destination: TableViewPage()) {
+                        Row(title: "TabBar", subTitle: "used to create a view container that contains bottom TabBar")
+                    }
+                }
+                
                 Section(header: Text("Alert")){
                     NavigationLink(destination: AlertPage()) {
                         Row(title: "Alert", subTitle: "display alert")
                     }
                     NavigationLink(destination: ActionSheetPage()) {
-                        Row(title: "ActionSheet", subTitle: "pop selection box")
+                        Row(title: "ActionSheet", subTitle: "pop up a selection box")
                     }
                     NavigationLink(destination: PopoverPage()) {
-                        Row(title: "Popover", subTitle: "pop a page")
+                        Row(title: "Popover", subTitle: "pop up a view")
                     }
                 }
             }
