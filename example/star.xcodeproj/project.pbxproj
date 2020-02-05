@@ -12,6 +12,9 @@
 		F8174E0D23EA6BB6000F8CA7 /* ActionSheetPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8174E0C23EA6BB6000F8CA7 /* ActionSheetPage.swift */; };
 		F8174E1223EA8969000F8CA7 /* NavigationViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8174E1123EA8969000F8CA7 /* NavigationViewPage.swift */; };
 		F8174E1423EA8979000F8CA7 /* TableViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8174E1323EA8979000F8CA7 /* TableViewPage.swift */; };
+		F8174E1723EADC8C000F8CA7 /* HStackPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8174E1623EADC8C000F8CA7 /* HStackPage.swift */; };
+		F8174E1923EADD02000F8CA7 /* VStackPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8174E1823EADD02000F8CA7 /* VStackPage.swift */; };
+		F8174E1D23EADD75000F8CA7 /* ZStackPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8174E1C23EADD75000F8CA7 /* ZStackPage.swift */; };
 		F8232B3B23D1570A005D508C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8232B3A23D1570A005D508C /* AppDelegate.swift */; };
 		F8232B3D23D1570A005D508C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8232B3C23D1570A005D508C /* SceneDelegate.swift */; };
 		F8232B3F23D1570A005D508C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8232B3E23D1570A005D508C /* ContentView.swift */; };
@@ -48,6 +51,9 @@
 		F8174E0C23EA6BB6000F8CA7 /* ActionSheetPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetPage.swift; sourceTree = "<group>"; };
 		F8174E1123EA8969000F8CA7 /* NavigationViewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewPage.swift; sourceTree = "<group>"; };
 		F8174E1323EA8979000F8CA7 /* TableViewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewPage.swift; sourceTree = "<group>"; };
+		F8174E1623EADC8C000F8CA7 /* HStackPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStackPage.swift; sourceTree = "<group>"; };
+		F8174E1823EADD02000F8CA7 /* VStackPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStackPage.swift; sourceTree = "<group>"; };
+		F8174E1C23EADD75000F8CA7 /* ZStackPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZStackPage.swift; sourceTree = "<group>"; };
 		F8232B3723D1570A005D508C /* star.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = star.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8232B3A23D1570A005D508C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8232B3C23D1570A005D508C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +119,16 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
+		F8174E1523EADC70000F8CA7 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				F8174E1623EADC8C000F8CA7 /* HStackPage.swift */,
+				F8174E1823EADD02000F8CA7 /* VStackPage.swift */,
+				F8174E1C23EADD75000F8CA7 /* ZStackPage.swift */,
+			);
+			path = Stack;
+			sourceTree = "<group>";
+		};
 		F8232B2E23D1570A005D508C = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +176,7 @@
 		F8232B4E23D1CE33005D508C /* page */ = {
 			isa = PBXGroup;
 			children = (
+				F8174E1523EADC70000F8CA7 /* Stack */,
 				F8174E0E23EA891A000F8CA7 /* Navigation */,
 				F8174E0523EA5F6D000F8CA7 /* Alert */,
 				F8A719A523E8126D001A2A8A /* International */,
@@ -330,12 +347,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8232B5523D1DD87005D508C /* ControllerPage.swift in Sources */,
+				F8174E1723EADC8C000F8CA7 /* HStackPage.swift in Sources */,
 				F8232B3B23D1570A005D508C /* AppDelegate.swift in Sources */,
 				F8A719BC23E98EC4001A2A8A /* SliderPage.swift in Sources */,
 				F8354E4F23E7C3E90092524F /* DatePickerPage.swift in Sources */,
 				F8F0572523D32EF400F3F7E5 /* ButtonPage.swift in Sources */,
 				F837E73623D2B62A0024841C /* WebImagePage.swift in Sources */,
 				F8174E1423EA8979000F8CA7 /* TableViewPage.swift in Sources */,
+				F8174E1923EADD02000F8CA7 /* VStackPage.swift in Sources */,
 				F8174E0D23EA6BB6000F8CA7 /* ActionSheetPage.swift in Sources */,
 				F8232B5723D1F4AF005D508C /* UIKitController.swift in Sources */,
 				F8232B5F23D2041D005D508C /* Window+Ext.swift in Sources */,
@@ -343,6 +362,7 @@
 				F8232B5A23D1FB2A005D508C /* TextPage.swift in Sources */,
 				F8A719A723E812CE001A2A8A /* InternationalPage.swift in Sources */,
 				F8232B5323D1DB66005D508C /* Row.swift in Sources */,
+				F8174E1D23EADD75000F8CA7 /* ZStackPage.swift in Sources */,
 				F8A719BE23E9906C001A2A8A /* TogglePage.swift in Sources */,
 				F8174E0923EA63D0000F8CA7 /* PopoverPage.swift in Sources */,
 				F823749123D7F2A600655E9C /* NavigationButtonPage.swift in Sources */,

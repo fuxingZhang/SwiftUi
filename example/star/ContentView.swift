@@ -75,6 +75,18 @@ struct ContentView: View {
                     }
                 }
                 
+                Section(header: Text("Stack")){
+                    NavigationLink(destination: HStackPage()) {
+                        Row(title: "HStackPage", subTitle: "HStackPage")
+                    }
+                    NavigationLink(destination: VStackPage()) {
+                        Row(title: "VStackPage", subTitle: "VStackPage")
+                    }
+                    NavigationLink(destination: ZStackPage()) {
+                        Row(title: "ZStackPage", subTitle: "ZStackPage")
+                    }
+                }
+                
                 Section(header: Text("Navigation")){
                     NavigationLink(destination: NavigationViewPage()) {
                         Row(title: "NavigationView", subTitle: "used to create a view container that contains top navigation bar")
@@ -104,7 +116,6 @@ struct ContentView: View {
                 Text("Right").foregroundColor(.orange)
             }))
         }
-        
     }
 }
 
