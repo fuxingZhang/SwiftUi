@@ -87,6 +87,18 @@ struct ContentView: View {
                     }
                 }
                 
+                Section(header: Text("List")){
+                    NavigationLink(destination: ForEachPage()) {
+                        Row(title: "ForEachPage", subTitle: "ForEachPage")
+                    }
+                    NavigationLink(destination: ListPage()) {
+                        Row(title: "ListPage", subTitle: "ListPage")
+                    }
+                    NavigationLink(destination: ScrollViewPage()) {
+                        Row(title: "ScrollViewPage", subTitle: "ScrollViewPage")
+                    }
+                }
+                
                 Section(header: Text("Navigation")){
                     NavigationLink(destination: NavigationViewPage()) {
                         Row(title: "NavigationView", subTitle: "used to create a view container that contains top navigation bar")
