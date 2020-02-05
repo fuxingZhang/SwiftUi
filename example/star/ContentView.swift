@@ -99,6 +99,18 @@ struct ContentView: View {
                     }
                 }
                 
+                Section(header: Text("Container")){
+                    NavigationLink(destination: FormPage(firstName: "zhang", lastName: "fu xing")) {
+                        Row(title: "FormPage", subTitle: "FormPage")
+                    }
+                    NavigationLink(destination: GroupPage()) {
+                        Row(title: "GroupPage", subTitle: "GroupPage")
+                    }
+                    NavigationLink(destination: SectionPage()) {
+                        Row(title: "SectionPage", subTitle: "SectionPage")
+                    }
+                }
+                
                 Section(header: Text("Navigation")){
                     NavigationLink(destination: NavigationViewPage()) {
                         Row(title: "NavigationView", subTitle: "used to create a view container that contains top navigation bar")
