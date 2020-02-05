@@ -74,6 +74,18 @@ struct ContentView: View {
                         Row(title: "Stepper", subTitle: "Stepper")
                     }
                 }
+                
+                Section(header: Text("Alert")){
+                    NavigationLink(destination: AlertPage()) {
+                        Row(title: "Alert", subTitle: "display alert")
+                    }
+                    NavigationLink(destination: ActionSheetPage()) {
+                        Row(title: "ActionSheet", subTitle: "pop selection box")
+                    }
+                    NavigationLink(destination: PopoverPage()) {
+                        Row(title: "Popover", subTitle: "pop a page")
+                    }
+                }
             }
             .listStyle(GroupedListStyle())
             .navigationBarTitle(Text("SwiftUi"), displayMode: .large)

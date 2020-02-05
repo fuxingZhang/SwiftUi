@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F8174E0723EA5FB9000F8CA7 /* AlertPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8174E0623EA5FB9000F8CA7 /* AlertPage.swift */; };
+		F8174E0923EA63D0000F8CA7 /* PopoverPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8174E0823EA63D0000F8CA7 /* PopoverPage.swift */; };
+		F8174E0D23EA6BB6000F8CA7 /* ActionSheetPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8174E0C23EA6BB6000F8CA7 /* ActionSheetPage.swift */; };
 		F8232B3B23D1570A005D508C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8232B3A23D1570A005D508C /* AppDelegate.swift */; };
 		F8232B3D23D1570A005D508C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8232B3C23D1570A005D508C /* SceneDelegate.swift */; };
 		F8232B3F23D1570A005D508C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8232B3E23D1570A005D508C /* ContentView.swift */; };
@@ -38,6 +41,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F8174E0623EA5FB9000F8CA7 /* AlertPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPage.swift; sourceTree = "<group>"; };
+		F8174E0823EA63D0000F8CA7 /* PopoverPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverPage.swift; sourceTree = "<group>"; };
+		F8174E0C23EA6BB6000F8CA7 /* ActionSheetPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetPage.swift; sourceTree = "<group>"; };
 		F8232B3723D1570A005D508C /* star.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = star.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8232B3A23D1570A005D508C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8232B3C23D1570A005D508C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +90,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F8174E0523EA5F6D000F8CA7 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				F8174E0623EA5FB9000F8CA7 /* AlertPage.swift */,
+				F8174E0823EA63D0000F8CA7 /* PopoverPage.swift */,
+				F8174E0C23EA6BB6000F8CA7 /* ActionSheetPage.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
 		F8232B2E23D1570A005D508C = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +147,7 @@
 		F8232B4E23D1CE33005D508C /* page */ = {
 			isa = PBXGroup;
 			children = (
+				F8174E0523EA5F6D000F8CA7 /* Alert */,
 				F8A719A523E8126D001A2A8A /* International */,
 				F84B33F823D9346B00C1130E /* Picker */,
 				F8F0572323D32EE000F3F7E5 /* Button */,
@@ -304,6 +321,7 @@
 				F8354E4F23E7C3E90092524F /* DatePickerPage.swift in Sources */,
 				F8F0572523D32EF400F3F7E5 /* ButtonPage.swift in Sources */,
 				F837E73623D2B62A0024841C /* WebImagePage.swift in Sources */,
+				F8174E0D23EA6BB6000F8CA7 /* ActionSheetPage.swift in Sources */,
 				F8232B5723D1F4AF005D508C /* UIKitController.swift in Sources */,
 				F8232B5F23D2041D005D508C /* Window+Ext.swift in Sources */,
 				F8232B5C23D1FEE2005D508C /* TextFieldPage.swift in Sources */,
@@ -311,8 +329,10 @@
 				F8A719A723E812CE001A2A8A /* InternationalPage.swift in Sources */,
 				F8232B5323D1DB66005D508C /* Row.swift in Sources */,
 				F8A719BE23E9906C001A2A8A /* TogglePage.swift in Sources */,
+				F8174E0923EA63D0000F8CA7 /* PopoverPage.swift in Sources */,
 				F823749123D7F2A600655E9C /* NavigationButtonPage.swift in Sources */,
 				F8232B6123D205A1005D508C /* View+Ext.swift in Sources */,
+				F8174E0723EA5FB9000F8CA7 /* AlertPage.swift in Sources */,
 				F8232B3D23D1570A005D508C /* SceneDelegate.swift in Sources */,
 				F8232B5123D1CE7E005D508C /* WebViewPage.swift in Sources */,
 				F837E73223D2ACC30024841C /* ImagePage.swift in Sources */,
