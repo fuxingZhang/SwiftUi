@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F810777723F15F7500340B4C /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F810777623F15F7500340B4C /* SheetView.swift */; };
 		F8174E0723EA5FB9000F8CA7 /* AlertPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8174E0623EA5FB9000F8CA7 /* AlertPage.swift */; };
 		F8174E0923EA63D0000F8CA7 /* PopoverPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8174E0823EA63D0000F8CA7 /* PopoverPage.swift */; };
 		F8174E0D23EA6BB6000F8CA7 /* ActionSheetPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8174E0C23EA6BB6000F8CA7 /* ActionSheetPage.swift */; };
@@ -52,6 +53,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F810777623F15F7500340B4C /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
 		F8174E0623EA5FB9000F8CA7 /* AlertPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPage.swift; sourceTree = "<group>"; };
 		F8174E0823EA63D0000F8CA7 /* PopoverPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverPage.swift; sourceTree = "<group>"; };
 		F8174E0C23EA6BB6000F8CA7 /* ActionSheetPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetPage.swift; sourceTree = "<group>"; };
@@ -112,6 +114,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F810777523F15F1100340B4C /* Sheet */ = {
+			isa = PBXGroup;
+			children = (
+				F810777623F15F7500340B4C /* SheetView.swift */,
+			);
+			path = Sheet;
+			sourceTree = "<group>";
+		};
 		F8174E0523EA5F6D000F8CA7 /* Alert */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +218,7 @@
 		F8232B4E23D1CE33005D508C /* page */ = {
 			isa = PBXGroup;
 			children = (
+				F810777523F15F1100340B4C /* Sheet */,
 				F8174E2523EAE207000F8CA7 /* Container */,
 				F8174E1E23EADECB000F8CA7 /* List */,
 				F8174E1523EADC70000F8CA7 /* Stack */,
@@ -396,6 +407,7 @@
 				F8232B5F23D2041D005D508C /* Window+Ext.swift in Sources */,
 				F8232B5C23D1FEE2005D508C /* TextFieldPage.swift in Sources */,
 				F8232B5A23D1FB2A005D508C /* TextPage.swift in Sources */,
+				F810777723F15F7500340B4C /* SheetView.swift in Sources */,
 				F8174E2223EADEEF000F8CA7 /* ListPage.swift in Sources */,
 				F8A719A723E812CE001A2A8A /* InternationalPage.swift in Sources */,
 				F8232B5323D1DB66005D508C /* Row.swift in Sources */,

@@ -43,7 +43,10 @@ struct ActionSheetPage: View {
                     .bold()
                     .font(.system(.largeTitle, design: .rounded))
             }
-            .actionSheet(isPresented: $showSheet, content: { sheet })
+//            .actionSheet(isPresented: $showSheet, content: { sheet })
+            .actionSheet(isPresented: $showSheet) {
+                sheet
+            }
         }
     }
 }

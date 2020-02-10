@@ -9,6 +9,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var showingProfile = false
+    
+    var profileButton: some View {
+        Button(action: { self.showingProfile.toggle() }) {
+            Image(systemName: "person.crop.circle")
+                .imageScale(.large)
+                .accessibility(label: Text("User Profile"))
+                .padding()
+        }
+    }
+    
     var body: some View {
         NavigationView{
             List{
@@ -134,11 +145,15 @@ struct ContentView: View {
             }
             .listStyle(GroupedListStyle())
             .navigationBarTitle(Text("SwiftUi"), displayMode: .large)
-            .navigationBarItems(trailing: Button(action: {
-                print("tap")
-            }, label: {
-                Text("Right").foregroundColor(.orange)
-            }))
+//            .navigationBarItems(trailing: Button(action: {
+//                print("tap")
+//            }, label: {
+//                Text("Right").foregroundColor(.orange)
+//            }))
+            .navigationBarItems(trailing: profileButton)
+            .sheet(isPresented: $showingProfile) {
+                SheetView()
+            }
         }
     }
 }

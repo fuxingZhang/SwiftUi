@@ -21,7 +21,7 @@ struct NavigationViewPage: View {
                     .font(.largeTitle)
             }
         }
-        .navigationBarTitle(Text("NavigationView"))
+        .navigationBarTitle(Text("NavigationView"), displayMode: .inline)
         .navigationBarItems(trailing: Button(action: {
             print("tapped")
         }, label: {
