@@ -30,6 +30,9 @@ struct ContentView: View {
                     NavigationLink(destination: ControllerPage<UIKitController>()){
                         Row(title: "UIViewController", subTitle: "display the UIViewController")
                     }
+                    NavigationLink(destination: Pop()){
+                        Row(title: "Pop", subTitle: "pop a view")
+                    }
                 }
                 
                 Section(header: Text("Basic components")) {
